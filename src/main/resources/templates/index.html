@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" th:href="@{/css/eventos.css}">
+        <link rel="icon" th:href="@{/img/Evento-icono.ico}">
+
+        <title>SGECJ - Inicio</title>
+        <style>
+            .inicio-imagen {
+                width: 300px;
+                height: auto;
+                margin-bottom: 20px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Cabecera -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" th:href="@{/index}">
+                <img th:src="@{/img/Evento-icono.png}" width="30" height="30" alt="Logo">
+                Sistema gestor de eventos
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="#">Inicio</a>
+                    <a class="nav-item nav-link" th:href="@{/listado}">Actividades</a>
+                    <a class="nav-item nav-link" th:href="@{/categorias}">Categorías</a>
+                    <a class="nav-item nav-link" th:href="@{/consultas}">Consultas</a>
+                    <a class="nav-item nav-link disabled" href="#">Eventos</a>
+                    <a class="nav-item nav-link disabled" href="#">Participantes</a>
+                    <a class="nav-item nav-link disabled" href="#">Asistentes</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Muestra el mensaje de bienvenida y una imagen -->
+        <div class="container mt-5 text-center mx-auto">
+            <h1 class="display-4">¡Bienvenido al Sistema de Gestión de Eventos del Campus Jalpa!</h1>
+            <p class="lead">Tu portal para una vida universitaria organizada y eficiente.</p>
+
+            <p class="lead">
+                Este sistema te permite gestionar de manera centralizada todas las actividades académicas, extracurriculares y administrativas. Con una interfaz intuitiva y fácil de usar, podrás:
+            </p>
+
+            <ul class="list-group">
+                <li class="list-group-item">
+                    Visualizar las actividades dadas de alta: Accede a una vista general de todas actividades con las fechas y lugares en que se realizan, el cupo de personas, el evento al que pertenecen, etc.
+                </li>
+                <li class="list-group-item">
+                    Dar de alta actividades: Registra actividades, especificando la información y los detalles de las mismas.
+                </li>
+                <li class="list-group-item">
+                    Ver información específica de las actividades: Además de poder eliminar o modificar las actividades que ya estén registradas.
+                </li>
+                <li class="list-group-item">
+                    Consultar las categorias: Consultar las categorías: Revisa una lista con todas las categorías a las que pueden pertenecer las actividades, agrega nuevas o edita y elimina las ya existentes.
+                </li>
+                <li class="list-group-item">
+                    Buscar actividades o categorías específicas utilizando la barra de búsqueda.
+                </li>
+                <li class="list-group-item">
+                    Realizar consultas y subconsultas para obtener información específica.
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- Pie de página -->
+        <footer class="bg-body-tertiary text-center">
+            <!-- Contenedor del Grid -->
+            <div class="container p-4"></div>
+
+            <!-- Derechos de autor -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2024 Derechos de autor:
+                <a class="text-body" href="https://mdbootstrap.com/">Sistema Gestor de Eventos Campus Jalpa</a>
+            </div>
+        </footer>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>SGECJ - Inicio de sesión</title>
+        <style>
+            .divider:after,
+            .divider:before {
+                content: "";
+                flex: 1;
+                height: 1px;
+                background: #eee;
+            }
+            .h-custom {
+                height: calc(100% - 73px);
+            }
+            @media (max-width: 450px) {
+                .h-custom {
+                    height: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <section class="vh-100">
+            <div class="container-fluid h-custom">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-md-9 col-lg-6 col-xl-5">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                             class="img-fluid" alt="Sample image">
+                    </div>
+                    <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                        <form th:action="@{/login}" method="post">
+
+                            <!-- Input del usuario -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <input required type="text" id="typeUsername" name="username" class="form-control form-control-lg" maxlength="50"/>
+                                <label class="form-label" for="typeUsername">Usuario</label>
+                            </div>
+
+                            <!-- Input de la contraseña -->
+                            <div data-mdb-input-init class="form-outline mb-3">
+                                <input required type="password" id="typePassword" name="password" class="form-control form-control-lg" maxlength="50"/>
+                                <label class="form-label" for="typePassword">Contraseña</label>
+                            </div>
+
+
+
+                            <div class="text-center text-lg-start mt-4 pt-2">
+                                <button  type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg"
+                                         style="padding-left: 2.5rem; padding-right: 2.5rem;">Iniciar Sesión</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
