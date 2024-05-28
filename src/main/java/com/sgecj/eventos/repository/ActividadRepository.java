@@ -8,6 +8,7 @@ import com.sgecj.eventos.domain.Actividad;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.jpa.repository.query.Procedure;
 import org.springframework.data.repository.query.Param;
 
 /**
@@ -81,4 +82,11 @@ public interface ActividadRepository extends JpaRepository<Actividad, Integer> {
      */
     @Query("SELECT a FROM Actividad a WHERE a.evento.id = (SELECT e.id FROM Evento e WHERE e.nombreEvento LIKE %?1%)")
     List<Actividad> consultaEvento(String consulta);
+    
+    /**
+     * Llama al procedimiento almacenado para eliminar la actividad por el ID
+     * @param actividadId
+     */
+    @Procedure(procedureName = "borrar_actividad")
+    void eliminarPorId(@Param("id") int actividadId);
 }

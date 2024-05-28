@@ -90,7 +90,7 @@ public class ActividadService {
      * @param id
      */
     public void eliminarPorId(int id) {
-        actividadRepository.deleteById(id);
+        actividadRepository.eliminarPorId(id);
     }
 
     /**
